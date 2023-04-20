@@ -32,7 +32,7 @@ Hidden Text Testing
 const term = Selector(".inline-d");
 
 test.only("Hidden Text Testing", async (t) => {
-  for (let i = 0; i <= 11; i++) {
+  for (let i = 0; i <= 29; i++) {
     const definition = Selector(".definition");
     var style = definition.nth(i).getStyleProperty("display");
     await t.expect(await style).eql("none");
