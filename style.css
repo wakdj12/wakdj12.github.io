@@ -19,6 +19,7 @@ header {
   border-bottom: solid 0.05em #c1e1c1;
   border-radius: 0;
   position: sticky; /* keeps the header at the top */
+  padding-bottom: 2.5em;
   top: 0;
   z-index: 10;
   height: 6em;
@@ -126,6 +127,10 @@ Radio button
  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_switch
 Not my work
 */
+
+label {
+  float: inline-end;
+}
 .switch {
   position: relative;
   display: inline-block;
