@@ -96,11 +96,12 @@ var header = document.querySelector("header");
 for (i = 0; i < title.length; i++) {
   var height = header.offsetHeight;
   // console.log(height);
+  var negativeHeight = height * -1;
   var offsetSize = height;
   console.log(offsetSize);
   title[i].style.paddingTop = height + "px";
-  console.log(title[i]);
-  title[i].style.paddingBottom = -height + "px";
+  title[i].style.marginTop = negativeHeight + "px";
+  console.log(title[i].style);
 }
 
 console.log(window.navigator.oscpu);
