@@ -106,3 +106,64 @@ for (i = 0; i < title.length; i++) {
 console.log(window.navigator.oscpu);
 
 /* calculating header height for offset end */
+
+/*
+Light Mode Dark Mode
+*/
+var radio = document.querySelector("input");
+var wrapper = document.querySelector("#wrapper");
+var text = document.querySelectorAll("p");
+var body = document.querySelector("body");
+var deffy = document.querySelectorAll(".definition");
+var header = document.querySelector("header");
+var head3 = document.querySelectorAll("h3");
+var head4 = document.querySelectorAll("h4");
+
+var deffyCount = deffy.length;
+console.log(deffy);
+var textCount = text.length;
+var head3Count = head3.length;
+var head4Count = head4.length;
+console.log(text);
+radio.onclick = function () {
+  if (radio.checked) {
+    wrapper.classList.add("darkMode-bcw");
+    body.classList.add("darkMode-bcw");
+    header.classList.add("darkMode-bcw");
+    for (let i = 0; i < textCount; i++) {
+      text[i].classList.add("darkMode-txt");
+    }
+    for (let i = 0; i < deffyCount; i++) {
+      deffy[i].classList.add("darkMode-txt");
+    }
+    for (let i = 0; i < head3Count; i++) {
+      head3[i].classList.add("darkMode-txt");
+    }
+    for (let i = 0; i < head4Count; i++) {
+      head4[i].classList.add("darkMode-txt");
+    }
+  }
+
+  if (!radio.checked) {
+    wrapper.classList.remove("darkMode-bcw");
+    body.classList.remove("darkMode-bcw");
+    header.classList.remove("darkMode-bcw");
+    for (let i = 0; i < textCount; i++) {
+      text[i].classList.remove("darkMode-txt");
+    }
+
+    for (let i = 0; i < head3Count; i++) {
+      head3[i].classList.remove("darkMode-txt");
+    }
+    for (let i = 0; i < head4Count; i++) {
+      head4[i].classList.remove("darkMode-txt");
+    }
+
+    for (let i = 0; i < deffyCount; i++) {
+      deffy[i].classList.remove("darkMode-txt");
+    }
+  }
+};
+/*
+Light Mode Dark Mode End
+*/

@@ -14,6 +14,19 @@ body {
   background-color: #121212;
   margin: auto;
 }
+/*
+Dark Mode Styling
+*/
+.darkMode-bcw {
+  background-color: #fff5d7 !important;
+}
+
+.darkMode-txt {
+  color: #121212;
+}
+/*
+Dark Mode Styling End
+*/
 header {
   border-bottom: solid 0.05em #c1e1c1;
   border-radius: 0;
@@ -132,7 +145,7 @@ Not my work
   position: relative;
   display: inline-block;
   width: 3em;
-  height: 1.5em;
+  height: 3em;
   margin: 0.5em;
 }
 
@@ -146,10 +159,8 @@ Not my work
   position: absolute;
   cursor: pointer;
   top: 0;
-  left: 0;
   right: 0;
   bottom: 0;
-  background-color: inherit;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -170,8 +181,8 @@ Not my work
 
 input:checked + .slider:before {
   -webkit-transform: translateX(1.625em);
-  -ms-transform: translateX(1.625em);
-  transform: translateX(1.625em);
+  -ms-transform: translateX(-0.8em);
+  transform: translateX(-0.8em);
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Darkmode_moon_shining_stars.svg/900px-Darkmode_moon_shining_stars.svg.png?20220205043149");
   background-attachment: inherit;
   background-size: contain;
@@ -205,7 +216,7 @@ Radio Button End
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 11;
   padding-top: 30vh;
   left: 0;
   top: 0;
