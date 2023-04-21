@@ -31,12 +31,12 @@ Hidden Text Testing
 */
 const term = Selector(".inline-d");
 
-test.only("Hidden Text Testing", async (t) => {
+test("Hidden Text Testing", async (t) => {
   for (let i = 0; i <= 29; i++) {
     const definition = Selector(".definition");
     var style = definition.nth(i).getStyleProperty("display");
     await t.expect(await style).eql("none");
-    await t.click(term.nth(i)).wait(500);
+    await t.click(term.nth(i)).wait(62);
     style = definition.nth(i).getStyleProperty("display");
     await t.expect(await style).eql("inline");
     await t.click(term.nth(i));
