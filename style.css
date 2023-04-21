@@ -128,9 +128,11 @@ Radio button
 Not my work
 */
 
-label {
-  float: inline-end;
+.switcharoo {
+  display: inline-flex;
+  float: right;
 }
+
 .switch {
   position: relative;
   display: inline-block;
