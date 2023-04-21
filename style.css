@@ -14,19 +14,7 @@ body {
   background-color: #121212;
   margin: auto;
 }
-/*
-Dark Mode Styling
-*/
-.darkMode-bcw {
-  background-color: #fff5d7 !important;
-}
 
-.darkMode-txt {
-  color: #121212;
-}
-/*
-Dark Mode Styling End
-*/
 header {
   border-bottom: solid 0.05em #c1e1c1;
   border-radius: 0;
@@ -111,9 +99,6 @@ li {
 nav {
   text-align: center;
 }
-em {
-  color: #fffdd0;
-}
 
 a:link,
 a:visited,
@@ -180,9 +165,9 @@ Not my work
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(1.625em);
+  /* -webkit-transform: translateX(1.625em);
   -ms-transform: translateX(-0.8em);
-  transform: translateX(-0.8em);
+  transform: translateX(-0.8em); */
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Darkmode_moon_shining_stars.svg/900px-Darkmode_moon_shining_stars.svg.png?20220205043149");
   background-attachment: inherit;
   background-size: contain;
@@ -365,6 +350,69 @@ Radio Button End
 }
 
 /**/
+
+/*
+Dark Mode Styling
+*/
+.darkMode-bcw {
+  background-color: #fff5d7 !important;
+  border-bottom: solid 0.05em #734f96;
+}
+.darkMode-head1 {
+  color: #bb605c;
+}
+
+.darkMode-head2 {
+  color: #bb605c;
+}
+.darkMode-txt {
+  color: #121212;
+}
+
+.darkMode-modalText li {
+  color: #121212 !important;
+}
+
+.darkMode-modalContent {
+  background-color: #fff5d7;
+}
+
+.darkMode-innyD {
+  color: #053767;
+}
+.inline-d:hover.darkMode-innyD {
+  color: salmon;
+}
+
+.darkMode-card {
+  border: solid #734f96 0.05em;
+  box-shadow: 0.1em 0.1em 1em rgba(115, 79, 150, 0.3);
+}
+
+img:hover.darkMode-img {
+  box-shadow: 0.15em 0.15em 1em rgba(115, 79, 150, 0.4);
+}
+
+.darkMode-modalHeader {
+  background-color: #bb605c;
+}
+
+a:link.darkMode-anch,
+a:visited.darkMode-anch,
+a:hover.darkMode-anch,
+a:active.darkMode-anch {
+  text-decoration: none;
+  color: #734f96 !important;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+a:hover.darkMode-anch {
+  color: silver !important;
+}
+/*
+  Dark Mode Styling End
+  */
 
 footer {
   text-align: center;

@@ -108,7 +108,7 @@ console.log(window.navigator.oscpu);
 /* calculating header height for offset end */
 
 /*
-Light Mode Dark Mode
+Light Mode Dark Mode Probably a more elegant way to achieve this, but i like loops
 */
 var radio = document.querySelector("input");
 var wrapper = document.querySelector("#wrapper");
@@ -116,31 +116,75 @@ var text = document.querySelectorAll("p");
 var body = document.querySelector("body");
 var deffy = document.querySelectorAll(".definition");
 var header = document.querySelector("header");
+var head1 = document.querySelector("h1");
+var head2 = document.querySelectorAll("h2");
 var head3 = document.querySelectorAll("h3");
 var head4 = document.querySelectorAll("h4");
+var anch = document.querySelectorAll("a");
+var innyD = document.querySelectorAll(".inline-d");
+var cardsy = document.querySelectorAll(".cards");
+var imagen = document.querySelectorAll("img");
+var modalText = document.querySelectorAll(".centre-t");
+var modalHeader = document.querySelectorAll(".modal-header");
+var modalContent = document.querySelectorAll(".modal-content");
 
 var deffyCount = deffy.length;
 console.log(deffy);
 var textCount = text.length;
+var head2Count = head2.length;
 var head3Count = head3.length;
 var head4Count = head4.length;
+var anchCount = anch.length;
+var innyDCount = innyD.length;
+var cardCount = cardsy.length;
+var imagenCount = imagen.length;
+var modalTextCount = modalText.length;
+var modalHeaderCount = modalHeader.length;
+var modalContentCount = modalContent.length;
 console.log(text);
 radio.onclick = function () {
   if (radio.checked) {
     wrapper.classList.add("darkMode-bcw");
     body.classList.add("darkMode-bcw");
     header.classList.add("darkMode-bcw");
+    head1.classList.add("darkMode-head1");
     for (let i = 0; i < textCount; i++) {
       text[i].classList.add("darkMode-txt");
     }
     for (let i = 0; i < deffyCount; i++) {
       deffy[i].classList.add("darkMode-txt");
     }
+    for (let i = 0; i < head2.length; i++) {
+      head2[i].classList.add("darkMode-head2");
+    }
     for (let i = 0; i < head3Count; i++) {
       head3[i].classList.add("darkMode-txt");
     }
     for (let i = 0; i < head4Count; i++) {
       head4[i].classList.add("darkMode-txt");
+    }
+    for (let i = 0; i < anchCount; i++) {
+      anch[i].classList.add("darkMode-anch");
+    }
+
+    for (let i = 0; i < innyDCount; i++) {
+      innyD[i].classList.add("darkMode-innyD");
+    }
+    for (let i = 0; i < cardCount; i++) {
+      cardsy[i].classList.add("darkMode-card");
+    }
+
+    for (let i = 0; i < imagenCount; i++) {
+      imagen[i].classList.add("darkMode-img");
+    }
+    for (let i = 0; i < modalTextCount; i++) {
+      modalText[i].classList.add("darkMode-modalText");
+    }
+    for (let i = 0; i < modalHeaderCount; i++) {
+      modalHeader[i].classList.add("darkMode-modalHeader");
+    }
+    for (let i = 0; i < modalContentCount; i++) {
+      modalContent[i].classList.add("darkMode-modalContent");
     }
   }
 
@@ -151,7 +195,11 @@ radio.onclick = function () {
     for (let i = 0; i < textCount; i++) {
       text[i].classList.remove("darkMode-txt");
     }
+    head1.classList.remove("darkMode-head1");
 
+    for (let i = 0; i < head2.length; i++) {
+      head2[i].classList.remove("darkMode-head2");
+    }
     for (let i = 0; i < head3Count; i++) {
       head3[i].classList.remove("darkMode-txt");
     }
@@ -161,6 +209,28 @@ radio.onclick = function () {
 
     for (let i = 0; i < deffyCount; i++) {
       deffy[i].classList.remove("darkMode-txt");
+    }
+    for (let i = 0; i < anchCount; i++) {
+      anch[i].classList.remove("darkMode-anch");
+    }
+
+    for (let i = 0; i < innyDCount; i++) {
+      innyD[i].classList.remove("darkMode-innyD");
+    }
+    for (let i = 0; i < cardCount; i++) {
+      cardsy[i].classList.remove("darkMode-card");
+    }
+    for (let i = 0; i < imagenCount; i++) {
+      imagen[i].classList.remove("darkMode-img");
+    }
+    for (let i = 0; i < modalTextCount; i++) {
+      modalText[i].classList.remove("darkMode-modalText");
+    }
+    for (let i = 0; i < modalHeaderCount; i++) {
+      modalHeader[i].classList.remove("darkMode-modalHeader");
+    }
+    for (let i = 0; i < modalContentCount; i++) {
+      modalContent[i].classList.remove("darkMode-modalContent");
     }
   }
 };
