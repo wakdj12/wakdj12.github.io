@@ -127,6 +127,7 @@ var imagen = document.querySelectorAll("img");
 var modalText = document.querySelectorAll(".centre-t");
 var modalHeader = document.querySelectorAll(".modal-header");
 var modalContent = document.querySelectorAll(".modal-content");
+var emph = document.querySelector("em");
 
 var deffyCount = deffy.length;
 console.log(deffy);
@@ -148,6 +149,7 @@ radio.onclick = function () {
     body.classList.add("darkMode-bcw");
     header.classList.add("darkMode-bcw");
     head1.classList.add("darkMode-head1");
+    emph.classList.add("darkMode-emph");
     for (let i = 0; i < textCount; i++) {
       text[i].classList.add("darkMode-txt");
     }
@@ -196,7 +198,7 @@ radio.onclick = function () {
       text[i].classList.remove("darkMode-txt");
     }
     head1.classList.remove("darkMode-head1");
-
+    emph.classList.remove("darkMode-emph");
     for (let i = 0; i < head2.length; i++) {
       head2[i].classList.remove("darkMode-head2");
     }
