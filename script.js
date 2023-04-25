@@ -1,29 +1,25 @@
 /*
 Show modal window
 */
-var modal = document.getElementsByClassName("modal");
+var modal = document.querySelectorAll(".modal");
 
-var btn = document.getElementsByClassName("btn");
+var btn = document.querySelectorAll(".btn");
 
-var span = document.getElementsByClassName("close");
+var span = document.querySelectorAll(".close");
 
-for (let i = 0; i < 4; i++) {
+for (let i = 0; i < span.length; i++) {
   btn[i].onclick = function () {
     modal[i].style.display = "block";
+    console.log(modal[i].getComputedStyle("display"));
   };
 
   span[i].onclick = function () {
     modal[i].style.display = "none";
   };
 
-  window.onclick = function (event) {
-    if (event.target == modal[i]) {
-      modal[i].style.display = "none";
-    }
-    if (event.target == modal[i]) {
-      modal[i].style.display = "none";
-    }
-  };
+  window.addEventListener("click", function (event) {
+    if (event.target == modal[i]) modal[i].style.display = "none";
+  });
 }
 
 /*
