@@ -28,7 +28,7 @@
         </nav>
         <div class="switcharoo">
           <label class="switch">
-            <input type="checkbox" value="0" />
+            <input type="checkbox" />
             <span class="slider round"></span>
           </label>
         </div>
@@ -765,7 +765,15 @@
         Secondly, there should policies in place detailling a incident response
         plan which should go outline the following steps...
       </p>
-      <p>Finally, depending on the sensitivity of the data</p>
+      <p>
+        Finally during the hiring process, any potential employees should
+        undergo a screening process. This can vary from a simple background
+        check in order to confirm their identity, to an invasive investigation
+        of their personal life. This may include financial checks to ensure they
+        are not at risk of selling company information to pay off debts, or
+        making sure that they don't participate in activities that could make
+        them vulnerable to blackmail.
+      </p>
       <div class="flex-container">
         <ul class="left">
           <li>
@@ -833,25 +841,102 @@
       >
       <h4>Technical</h4>
       <p>
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum."
+        The technical side of cybersecurity is, in my opinion, the most important aspect as personnel and policy security measures are essentially useless without it. Technical security measures provide protection from outside attacks and if employees behaved in a "perfect way" there would be no need for the personnel and polc security measures.
       </p>
+      <p>
+        Say a new company has got to the stage where they are thinking about
+        protecting their business and data from attacks the minimum requirements
+        should include:
+      </p>
+      <ol class="translation">
+        <li>
+          <p>
+            Deciding who can access what data and resources both internally and
+            externally through the use of access controls. This helps reduce the
+            unwanted (whether malicious or not) creation, reading, updating, and
+            deletion of system resources such as data or key software. For
+            example, the payroll team should be the only people who can access
+            the banking information and salaries of employees.
+          </p>
+          <p>
+            There is some crossover here with the non-technical apsect as there
+            may be physical access controls in place that restricts the movement
+            of guests and different types of employees within an office for
+            example.
+          </p>
+        </li>
+        <li>
+          <p>
+            Making sure all software and operating systems the business is using
+            is up to date as most of these updates include security patches
+            making them less vulnerable to attacks. It may also be a good idea
+            to implement a process called system hardening which implements
+            restrictions on what tasks a specific user can do e.g. not allowing
+            downloads of software or documents which aren't preapproved.
+          </p>
+        </li>
+        <li>
+          <p>
+            Identify what areas are at risk and how an attack may be delivered.
+            In most cases this will be the data which is held by the business
+            such personal banking information and the areas which an attacker
+            will make their first point of contact e.g email.
+          </p>
+          <p>
+            There are three main methods to protect the data and databases
+            involve.
+          </p>
+          <ol class="translation">
+            <li>
+              <p>
+                Encrpting the data held in a database is a good start, because
+                even if an attacker manages to retrieve data from a database
+                they will probably not be able to understand what the data is
+                and how to decrypt it unless they have an advanced skill set or
+                have insider information. For example this paragraph encrypted
+                using SHA-256 hashing algorithm is
+                <code
+                  >015b0dfeb34fab52c6dd5c1dff8a1ad696a43d89836a551c2475bdb48293b702</code
+                >.
+              </p>
+              <p>
+                Unless you are a very powerful computer with a lot of time this
+                is not useful data. However you do not need to be such a thing
+                if you just want to delete the data. <p>
+            
+                    Hash generated by
+  
+                    <a
+                      href="https://codebeautify.org/sha256-hash-generator"
+                      target="_blank"
+                      >Code Beautify</a
+                    >
+                  
+                </p>
+              </p>
+            </li>
+            <li>
+             <p>
+              As discussed in the point above, databases are also vulnerable to data deletion, which can cause extreme damage to a business' functioning. For example in September 2022 the IHG group (owners of Holiday Inn) were victims of a data deletion attack which caused severe disruptions to their booking system. According to the article linked below the password to their databases was &ldquo;Qwerty123&rdquo;. <a href="https://www.passwordmonster.com/" target="_blank">PasswordMonster</a> tells me that this password would take 0 seconds to crack, so not having a password as ridiculous as this would be a good start. Another good way to prevent this type of destruction is to have data back ups. NCSC outlines a 3-2-1 strategy for data back ups. 3 for the number of copies of data on 2 devices and 1 offsite backups.
+             </p>
+             <p>
+              <a href="https://www.bbc.co.uk/news/technology-62937678" target="_blank">IHG attack for fun</a>
+             </p>
+             <p>
+              <a href="https://www.ncsc.gov.uk/collection/10-steps/data-security" target="_blank">3-2-1</a>
+             </p>
+            </li>
+            <li> <p>Last, but not least SQL injection!</p>
+            <p>Even though the damage an SQL injection could cause was discovered in 1998, it is still a major vulnerabilty and <a href="https://www.helpnetsecurity.com/2014/03/28/analysis-of-three-billion-attacks-reveals-sql-injections-cost-196000/" target="_blank">helpnet security</a>  the average cost of a minor SQL injection attack is $196,000.</p>
+          <p>The minimum a business can do to protect against a SQL injection attack is to restrict, validate and santize user input so that any potential attacks do not reach the database and block any IP addresses that are sending this malicious code. As always it as always a good idea keep up to date with available updates.</p>
+        <p><a href="https://codecurmudgeon.com/wp/sql-injection-hall-of-shame/">SQLI Hall of Fame</a></p>
+      <p><a href="https://www.geeksforgeeks.org/sql-injection/">More detailed information on SQLI</a></p></li>
+          </ol>
+        </li>
+      </ol>
 
       <h3>Personal Mitigation</h3>
-      <p>
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum."
-      </p>
+      <p></p>
       <h2 id="privacy" class="shift">Privacy Concerns</h2>
       <p>
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

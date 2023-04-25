@@ -10,7 +10,6 @@ var span = document.querySelectorAll(".close");
 for (let i = 0; i < span.length; i++) {
   btn[i].onclick = function () {
     modal[i].style.display = "block";
-    console.log(modal[i].getComputedStyle("display"));
   };
 
   span[i].onclick = function () {
@@ -39,17 +38,12 @@ function json(url) {
 
 let apiKey = "627c6d76f95b0ee0e7cef70893447a56f28f3859021e4cab28a183ac";
 json(`https://api.ipdata.co?api-key=${apiKey}`).then((data) => {
-  console.log(data.ip);
-  console.log(data.city);
-  console.log(data.latitude, data.longitude);
   pInfo.textContent = `IP Adress: ${data.ip}, City: ${data.city}, Approximate Latitude: ${data.latitude}, Approximate Longitude: ${data.longitude}, Operating System: ${window.navigator.oscpu}`;
 });
 
 pInfo.textContent = json(
   `https://api.ipdata.co/27.126.160.0/threat?api-key=${apiKey}`
-).then((data) => {
-  console.log(data.blocklists);
-});
+).then((data) => {});
 
 /*
 INFORMATION FROM API END
@@ -57,7 +51,6 @@ INFORMATION FROM API END
 
 width = window.innerWidth;
 height = window.innerHeight;
-console.log(width, height);
 
 /*
 When clicking on a defintion it will appear or disappear depending on it's current state. Implemented to reduce clutter on mobile.
@@ -66,8 +59,6 @@ var x = document.querySelectorAll(".inline-d");
 
 x.forEach((e) => {
   e.addEventListener("click", function () {
-    console.log(e.childNodes[1].className);
-    console.log(e.childNodes[1].textContent);
     w = e.childNodes[1];
     s = getComputedStyle(w);
     if (s.display === "none") {
@@ -86,21 +77,15 @@ DECLUTTERING END
 
 var title = document.querySelectorAll(".shift"),
   i;
-console.log(title.length);
 var header = document.querySelector("header");
 
 for (i = 0; i < title.length; i++) {
   var height = header.offsetHeight;
-  // console.log(height);
   var negativeHeight = height * -1;
   var offsetSize = height;
-  console.log(offsetSize);
   title[i].style.paddingTop = height + "px";
   title[i].style.marginTop = negativeHeight + "px";
-  console.log(title[i].style);
 }
-
-console.log(window.navigator.oscpu);
 
 /* calculating header height for offset end */
 
@@ -125,9 +110,9 @@ var modalText = document.querySelectorAll(".centre-t");
 var modalHeader = document.querySelectorAll(".modal-header");
 var modalContent = document.querySelectorAll(".modal-content");
 var emph = document.querySelector("em");
+var ole = document.querySelectorAll(".translation");
 
 var deffyCount = deffy.length;
-console.log(deffy);
 var textCount = text.length;
 var head2Count = head2.length;
 var head3Count = head3.length;
@@ -139,7 +124,7 @@ var imagenCount = imagen.length;
 var modalTextCount = modalText.length;
 var modalHeaderCount = modalHeader.length;
 var modalContentCount = modalContent.length;
-console.log(text);
+var oleLength = ole.length;
 radio.onclick = function () {
   if (radio.checked) {
     wrapper.classList.add("darkMode-bcw");
@@ -184,6 +169,9 @@ radio.onclick = function () {
     }
     for (let i = 0; i < modalContentCount; i++) {
       modalContent[i].classList.add("darkMode-modalContent");
+    }
+    for (let i = 0; i < ole.length; i++) {
+      ole[i].classList.add("darkMode-ol");
     }
   }
 
@@ -230,6 +218,9 @@ radio.onclick = function () {
     }
     for (let i = 0; i < modalContentCount; i++) {
       modalContent[i].classList.remove("darkMode-modalContent");
+    }
+    for (let i = 0; i < ole.length; i++) {
+      ole[i].classList.remove("darkMode-ol");
     }
   }
 };

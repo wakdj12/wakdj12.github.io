@@ -4,6 +4,7 @@
   color: #fffff0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: lighter;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -103,13 +104,17 @@ nav {
   text-align: center;
 }
 
+code {
+  color: #ff2400;
+}
+
 a:link,
 a:visited,
 a:hover,
 a:active {
   text-decoration: none;
   color: #c1e1c1;
-  font-weight: bold;
+  font-weight: 565;
   transition: all 0.3s ease;
 }
 
@@ -127,7 +132,7 @@ button {
 /*
 Radio button
  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_switch
-Not my work
+Mostly not my work
 */
 
 .switcharoo {
@@ -143,11 +148,11 @@ Not my work
   margin: 0.5em;
 }
 
-.switch input {
+/* .switch input {
   opacity: 0;
   width: 0;
   height: 0;
-}
+} */
 
 .slider {
   position: absolute;
@@ -159,7 +164,7 @@ Not my work
   transition: 0.4s;
 }
 
-.slider:before {
+.slider::before {
   position: absolute;
   content: "";
   height: 1.5em;
@@ -173,7 +178,7 @@ Not my work
   transition: 0.4s;
 }
 
-input:checked + .slider:before {
+input:checked + .slider::before {
   /* -webkit-transform: translateX(1.625em);
   -ms-transform: translateX(-0.8em);
   transform: translateX(-0.8em); */
@@ -378,6 +383,9 @@ Dark Mode Styling
   color: #121212;
 }
 
+.darkMode-ol li {
+  color: #121212;
+}
 .darkMode-modalText li {
   color: #121212 !important;
 }
