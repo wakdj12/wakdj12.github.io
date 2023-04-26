@@ -148,11 +148,11 @@ Mostly not my work
   margin: 0.5em;
 }
 
-/* .switch input {
+.switch input {
   opacity: 0;
   width: 0;
   height: 0;
-} */
+}
 
 .slider {
   position: absolute;
