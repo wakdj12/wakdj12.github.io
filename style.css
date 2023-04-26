@@ -64,6 +64,11 @@ h5 {
   text-align: center;
 }
 
+code {
+  color: red;
+  word-wrap: break-word;
+}
+
 img {
   max-width: 75%;
   height: auto;
@@ -95,17 +100,17 @@ ul {
   -webkit-columns: 2;
   -moz-columns: 2;
 }
-
+/* 
 li {
   margin-left: 0.75em;
   padding: 0.25em;
+} */
+ol.translation {
+  margin-left: -1em;
+  z-index: 0;
 }
 nav {
   text-align: center;
-}
-
-code {
-  color: #ff2400;
 }
 
 a:link,
