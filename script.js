@@ -128,110 +128,110 @@ var modalContentCount = modalContent.length;
 var oleLength = ole.length;
 var codeLength = code.length;
 radio.onclick = function () {
-  if (radio.checked) {
-    wrapper.classList.add("darkMode-bcw");
-    body.classList.add("darkMode-bcw");
-    header.classList.add("darkMode-bcw");
-    head1.classList.add("darkMode-head1");
-    emph.classList.add("darkMode-emph");
-    for (let i = 0; i < textCount; i++) {
-      text[i].classList.add("darkMode-txt");
-    }
-    for (let i = 0; i < deffyCount; i++) {
-      deffy[i].classList.add("darkMode-txt");
-    }
-    for (let i = 0; i < head2.length; i++) {
-      head2[i].classList.add("darkMode-head2");
-    }
-    for (let i = 0; i < head3Count; i++) {
-      head3[i].classList.add("darkMode-txt");
-    }
-    for (let i = 0; i < head4Count; i++) {
-      head4[i].classList.add("darkMode-txt");
-    }
-    for (let i = 0; i < anchCount; i++) {
-      anch[i].classList.add("darkMode-anch");
-    }
-
-    for (let i = 0; i < innyDCount; i++) {
-      innyD[i].classList.add("darkMode-innyD");
-    }
-    for (let i = 0; i < cardCount; i++) {
-      cardsy[i].classList.add("darkMode-card");
-    }
-
-    for (let i = 0; i < imagenCount; i++) {
-      imagen[i].classList.add("darkMode-img");
-    }
-    for (let i = 0; i < modalTextCount; i++) {
-      modalText[i].classList.add("darkMode-modalText");
-    }
-    for (let i = 0; i < modalHeaderCount; i++) {
-      modalHeader[i].classList.add("darkMode-modalHeader");
-    }
-    for (let i = 0; i < modalContentCount; i++) {
-      modalContent[i].classList.add("darkMode-modalContent");
-    }
-    for (let i = 0; i < ole.length; i++) {
-      ole[i].classList.add("darkMode-ol");
-    }
-    for (let i = 0; i < code.length; i++) {
-      code[i].classList.add("darkMode-code");
-    }
+  // if (radio.checked) {
+  wrapper.classList.toggle("darkMode-bcw");
+  body.classList.toggle("darkMode-bcw");
+  header.classList.toggle("darkMode-bcw");
+  head1.classList.toggle("darkMode-head1");
+  emph.classList.toggle("darkMode-emph");
+  for (let i = 0; i < textCount; i++) {
+    text[i].classList.toggle("darkMode-txt");
+  }
+  for (let i = 0; i < deffyCount; i++) {
+    deffy[i].classList.toggle("darkMode-txt");
+  }
+  for (let i = 0; i < head2.length; i++) {
+    head2[i].classList.toggle("darkMode-head2");
+  }
+  for (let i = 0; i < head3Count; i++) {
+    head3[i].classList.toggle("darkMode-txt");
+  }
+  for (let i = 0; i < head4Count; i++) {
+    head4[i].classList.toggle("darkMode-txt");
+  }
+  for (let i = 0; i < anchCount; i++) {
+    anch[i].classList.toggle("darkMode-anch");
   }
 
-  if (!radio.checked) {
-    wrapper.classList.remove("darkMode-bcw");
-    body.classList.remove("darkMode-bcw");
-    header.classList.remove("darkMode-bcw");
-    for (let i = 0; i < textCount; i++) {
-      text[i].classList.remove("darkMode-txt");
-    }
-    head1.classList.remove("darkMode-head1");
-    emph.classList.remove("darkMode-emph");
-    for (let i = 0; i < head2.length; i++) {
-      head2[i].classList.remove("darkMode-head2");
-    }
-    for (let i = 0; i < head3Count; i++) {
-      head3[i].classList.remove("darkMode-txt");
-    }
-    for (let i = 0; i < head4Count; i++) {
-      head4[i].classList.remove("darkMode-txt");
-    }
+  for (let i = 0; i < innyDCount; i++) {
+    innyD[i].classList.toggle("darkMode-innyD");
+  }
+  for (let i = 0; i < cardCount; i++) {
+    cardsy[i].classList.toggle("darkMode-card");
+  }
 
-    for (let i = 0; i < deffyCount; i++) {
-      deffy[i].classList.remove("darkMode-txt");
-    }
-    for (let i = 0; i < anchCount; i++) {
-      anch[i].classList.remove("darkMode-anch");
-    }
-
-    for (let i = 0; i < innyDCount; i++) {
-      innyD[i].classList.remove("darkMode-innyD");
-    }
-    for (let i = 0; i < cardCount; i++) {
-      cardsy[i].classList.remove("darkMode-card");
-    }
-    for (let i = 0; i < imagenCount; i++) {
-      imagen[i].classList.remove("darkMode-img");
-    }
-    for (let i = 0; i < modalTextCount; i++) {
-      modalText[i].classList.remove("darkMode-modalText");
-    }
-    for (let i = 0; i < modalHeaderCount; i++) {
-      modalHeader[i].classList.remove("darkMode-modalHeader");
-    }
-    for (let i = 0; i < modalContentCount; i++) {
-      modalContent[i].classList.remove("darkMode-modalContent");
-    }
-    for (let i = 0; i < ole.length; i++) {
-      ole[i].classList.remove("darkMode-ol");
-    }
-    for (let i = 0; i < code.length; i++) {
-      code[i].classList.remove("darkMode-code");
-    }
+  for (let i = 0; i < imagenCount; i++) {
+    imagen[i].classList.toggle("darkMode-img");
+  }
+  for (let i = 0; i < modalTextCount; i++) {
+    modalText[i].classList.toggle("darkMode-modalText");
+  }
+  for (let i = 0; i < modalHeaderCount; i++) {
+    modalHeader[i].classList.toggle("darkMode-modalHeader");
+  }
+  for (let i = 0; i < modalContentCount; i++) {
+    modalContent[i].classList.toggle("darkMode-modalContent");
+  }
+  for (let i = 0; i < ole.length; i++) {
+    ole[i].classList.toggle("darkMode-ol");
+  }
+  for (let i = 0; i < code.length; i++) {
+    code[i].classList.toggle("darkMode-code");
   }
 };
+
+// if (!radio.checked) {
+//   wrapper.classList.remove("darkMode-bcw");
+//   body.classList.remove("darkMode-bcw");
+//   header.classList.remove("darkMode-bcw");
+//   for (let i = 0; i < textCount; i++) {
+//     text[i].classList.remove("darkMode-txt");
+//   }
+//   head1.classList.remove("darkMode-head1");
+//   emph.classList.remove("darkMode-emph");
+//   for (let i = 0; i < head2.length; i++) {
+//     head2[i].classList.remove("darkMode-head2");
+//   }
+//   for (let i = 0; i < head3Count; i++) {
+//     head3[i].classList.remove("darkMode-txt");
+//   }
+//   for (let i = 0; i < head4Count; i++) {
+//     head4[i].classList.remove("darkMode-txt");
+//   }
+
+//   for (let i = 0; i < deffyCount; i++) {
+//     deffy[i].classList.remove("darkMode-txt");
+//   }
+//   for (let i = 0; i < anchCount; i++) {
+//     anch[i].classList.remove("darkMode-anch");
+//   }
+
+//   for (let i = 0; i < innyDCount; i++) {
+//     innyD[i].classList.remove("darkMode-innyD");
+//   }
+//   for (let i = 0; i < cardCount; i++) {
+//     cardsy[i].classList.remove("darkMode-card");
+//   }
+//   for (let i = 0; i < imagenCount; i++) {
+//     imagen[i].classList.remove("darkMode-img");
+//   }
+//   for (let i = 0; i < modalTextCount; i++) {
+//     modalText[i].classList.remove("darkMode-modalText");
+//   }
+//   for (let i = 0; i < modalHeaderCount; i++) {
+//     modalHeader[i].classList.remove("darkMode-modalHeader");
+//   }
+//   for (let i = 0; i < modalContentCount; i++) {
+//     modalContent[i].classList.remove("darkMode-modalContent");
+//   }
+//   for (let i = 0; i < ole.length; i++) {
+//     ole[i].classList.remove("darkMode-ol");
+//   }
+//   for (let i = 0; i < code.length; i++) {
+//     code[i].classList.remove("darkMode-code");
+//   }
+// }
+//};
 /*
 Light Mode Dark Mode End
 */
