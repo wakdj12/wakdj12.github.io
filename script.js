@@ -111,6 +111,7 @@ var modalHeader = document.querySelectorAll(".modal-header");
 var modalContent = document.querySelectorAll(".modal-content");
 var emph = document.querySelector("em");
 var ole = document.querySelectorAll(".translation");
+var code = document.querySelectorAll("code");
 
 var deffyCount = deffy.length;
 var textCount = text.length;
@@ -125,6 +126,7 @@ var modalTextCount = modalText.length;
 var modalHeaderCount = modalHeader.length;
 var modalContentCount = modalContent.length;
 var oleLength = ole.length;
+var codeLength = code.length;
 radio.onclick = function () {
   if (radio.checked) {
     wrapper.classList.add("darkMode-bcw");
@@ -172,6 +174,9 @@ radio.onclick = function () {
     }
     for (let i = 0; i < ole.length; i++) {
       ole[i].classList.add("darkMode-ol");
+    }
+    for (let i = 0; i < code.length; i++) {
+      code[i].classList.add("darkMode-code");
     }
   }
 
@@ -221,6 +226,9 @@ radio.onclick = function () {
     }
     for (let i = 0; i < ole.length; i++) {
       ole[i].classList.remove("darkMode-ol");
+    }
+    for (let i = 0; i < code.length; i++) {
+      code[i].classList.remove("darkMode-code");
     }
   }
 };

@@ -5,6 +5,7 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: lighter;
   scroll-behavior: smooth;
+  line-height: 1.5em;
 }
 
 body {
@@ -210,11 +211,13 @@ Radio Button End
 
 .inline-d {
   color: #fac898;
+  line-height: 1.75em;
 }
 .inline-d:active,
 .inline-d:hover {
   color: #a7c7e7;
 }
+
 /* Modal Content */
 /* The Modal (background) */
 .modal {
@@ -422,6 +425,9 @@ img:hover.darkMode-img {
 .darkMode-modalHeader {
   background-color: #bb605c;
 }
+.darkMode-code {
+  color: blue;
+}
 
 a:link.darkMode-anch,
 a:visited.darkMode-anch,
@@ -434,7 +440,7 @@ a:active.darkMode-anch {
 }
 
 a:hover.darkMode-anch {
-  color: silver !important;
+  color: #e7b2a4 !important;
 }
 /*
   Dark Mode Styling End

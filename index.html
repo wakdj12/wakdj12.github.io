@@ -744,7 +744,7 @@
         approach that most companies choose to take. Can be divided into human
         and technical factors.
       </p>
-      <h4>Personnel and Policy</h4>
+      <h4>Personnel and Policy Security Measures</h4>
       <p>
         The human error side is an extremely vulnerable side of cyber security,
         with some organistations having millions of employees it is not
@@ -839,7 +839,7 @@
         target="_blank"
         >Security Metrics &#8593;</a
       >
-      <h4>Technical</h4>
+      <h4>Technical Security Measures</h4>
       <p>
         The technical side of cybersecurity is, in my opinion, the most
         important aspect as personnel and policy security measures are
@@ -986,10 +986,49 @@
             </li>
           </ol>
         </li>
+        <li>
+          <p>
+            Create a barrier between the business' computing resources and the
+            outisde world world through the use of firewalls. Cybersecurity
+            version of border control.
+          </p>
+          <p>
+            A firewall monitors and potentially incoming and outgoing network
+            traffic through the use of tools such as Intrusion Prevention
+            Systems and Intrusion Detection Systems, which are preprogrammed to
+            recognise the patterns in which malicious activity occurs. The
+            deeper you go into the firewall the more sophisticated the "tests".
+            This saves time and therefore money as these more refined tests take
+            more time, and if a request is clearly malicious there is no point
+            using a time expensive model when a basic model achieves the same
+            result. This also reduces the likelihood of Dos/DDoS attacks.
+          </p>
+        </li>
       </ol>
 
       <h3>Personal Mitigation</h3>
-      <p></p>
+      <p>
+        It is fairly easy, although mildly inconvenient to drastically improve
+        your own personal security when using modern computing devices.
+        <ol class="translation">
+          <li><p>
+            Improving password implementation. This would involve not using the same password for every account, as if one password is leaked in a data breach all of your accounts are vulnerable as well. Also includes setting strong passwords, what you want to do here is create a password with a high level of entropy (in this context it means the level of unpredicitability of the combination of characters in the password). The average password strength is around 40 bits of entropy and therefore the maximum number of guesses required to crack it will be 2^40 attempts which may seem like a lot but can be cracked in under 30 minutes. 
+            
+          </p>
+        <p>
+          For example
+          <code>XSgY5Fu</code> has 41.65 bits of entropy so just above the average and can be cracked in around 17 minutes.
+       <code>9ibU10BZ&X/RfYq</code> has 98.25 bits of entropy and will take centuries to crack using current technology. </p>
+      <p>Setting up two factor authentication in conjunction with a strong password would make you very secure online.</p>
+    <p><a href="https://bitwarden.com/password-strength/">bitwarden</a> for password strength calculation, <a href="https://ultracalculator.net/password_generator.html">Ultra calculator</a> for generating and calculating entropy of password, <a href="https://en.wikipedia.org/wiki/Password_strength">wikipedia</a> for password strength </p></li>
+          <li>Try not to connect to public Wi-Fi, and if you do use a VPN. Connecting to public Wi-FI is extremely risky behaviour and I would suggest that you never do it. An attacker is able to commit many different types of attacks such as a MITM attack in order to see any data sent and recieved such as passwords or delivering malware by altering the data that you are recieving.</li>
+          <li><p>Keep all software and operating systems up to data. This just ensures that any known security vulnerabilties have been patched. For example, if you are still running Windows XP you are leaving yourself vulenrable to 71 known vulnerabilites</p>
+          <p><a href="https://www.cvedetails.com/vulnerability-list.php?vendor_id=26&product_id=739&version_id=&page=2&hasexp=0&opdos=0&opec=0&opov=0&opcsrf=0&opgpriv=0&opsqli=0&opxss=0&opdirt=0&opmemc=0&ophttprs=0&opbyp=0&opfileinc=0&opginf=0&cvssscoremin=5&cvssscoremax=5.99&year=0&month=0&cweid=0&order=1&trc=71&sha=15080ffeb9d04909b33474c258be9569fe2b6ab6">CVE Details: Windows XP</a></p></li>
+          <li>Don't open texts and emails from unknown senders. More often than not these will be phishing attempts to try and trick you into handing over your personal data or download malware.</li>
+          <li>Don't connect to websites which don't use HTTPS. By not using HTTPS sites you are not offered the protection offered by encryption via  <a href="https://www.cloudflare.com/learning/ssl/transport-layer-security-tls/">TLS</a> allowing attackers to read all the information you are sending and recieving, as well as inserting malware into the sites.</li>
+          <li>Don't save banking information when possible. This leaves your money at risk if a company you use falls victim to a data breach.</li>
+        </ol>
+      </p>
       <h2 id="privacy" class="shift">Privacy Concerns</h2>
       <p>
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
