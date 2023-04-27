@@ -10,7 +10,7 @@
 
 body {
   background-color: #121212;
-  margin: 2.5em;
+  margin: 0 2.5em 2.5em 2.5em;
 }
 #wrapper {
   background-color: #121212;
@@ -21,6 +21,7 @@ header {
   border-bottom: solid 0.05em #c1e1c1;
   border-radius: 0;
   position: sticky; /* keeps the header at the top */
+  padding-top: 0.5em;
   padding-bottom: 2.5em;
   top: 0;
   z-index: 10;
