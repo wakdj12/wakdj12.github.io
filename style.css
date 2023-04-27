@@ -217,6 +217,7 @@ Radio Button End
 .inline-d:active,
 .inline-d:hover {
   color: #a7c7e7;
+  cursor: pointer;
 }
 
 /* Modal Content */
