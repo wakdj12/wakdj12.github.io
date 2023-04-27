@@ -376,70 +376,68 @@ Radio Button End
 /*
 Dark Mode Styling
 */
-.darkMode-bcw {
+.lightMode-bcw {
   background-color: #fff5d7 !important;
   border-bottom: solid 0.05em #734f96;
 }
-.darkMode-head1 {
+.lightMode-headMain {
   color: #bb605c;
 }
 
-.darkMode-head2 {
-  color: #bb605c;
-}
-.darkMode-txt {
+.lightMode-txt,
+.lightMode-txt li {
   color: #121212;
 }
 
-.darkMode-ol li {
+/* .lightMode-ol li {
   color: #121212;
-}
-.darkMode-modalText li {
+} */
+/* .lightMode-modalText li {
   color: #121212 !important;
-}
+} */
 
-.darkMode-modalContent {
+.lightMode-modalContent {
   background-color: #fff5d7;
 }
 
-.darkMode-emph {
+.lightMode-emph {
   color: #a483c2;
 }
 
-.darkMode-innyD {
+.lightMode-innyD {
   color: #053767;
 }
-.inline-d:hover.darkMode-innyD {
+.inline-d:hover.lightMode-innyD {
   color: salmon;
 }
 
-.darkMode-card {
+.lightMode-card {
   border: solid #734f96 0.05em;
-  box-shadow: 0.1em 0.1em 1em rgba(115, 79, 150, 0.3);
+  box-shadow: 0.1em 0.1em 0.75em rgba(115, 79, 150, 0.3);
 }
 
 img:hover.darkMode-img {
   box-shadow: 0.15em 0.15em 1em rgba(115, 79, 150, 0.4);
 }
 
-.darkMode-modalHeader {
+.lightMode-modalHeader {
   background-color: #bb605c;
 }
-.darkMode-code {
+.lightMode-code {
   color: blue;
 }
 
-a:link.darkMode-anch,
-a:visited.darkMode-anch,
-a:hover.darkMode-anch,
-a:active.darkMode-anch {
+a:link.lightMode-anch,
+a:visited.lightMode-anch,
+a:hover.lightMode-anch,
+a:active.lightMode-anch {
   text-decoration: none;
   color: #734f96 !important;
   font-weight: bold;
   transition: all 0.3s ease;
 }
 
-a:hover.darkMode-anch {
+a:hover.lightMode-anch {
   color: #e7b2a4 !important;
 }
 /*
