@@ -4,7 +4,7 @@
   color: #fffff0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: lighter;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   line-height: 1.5em;
 }
 
@@ -388,13 +388,6 @@ Dark Mode Styling
 .lightMode-txt li {
   color: #121212;
 }
-
-/* .lightMode-ol li {
-  color: #121212;
-} */
-/* .lightMode-modalText li {
-  color: #121212 !important;
-} */
 
 .lightMode-modalContent {
   background-color: #fff5d7;
