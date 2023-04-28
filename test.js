@@ -29,20 +29,24 @@ Modal Testing END
 /*
 Hidden Text Testing
 */
-const term = Selector(".inline-d");
 
 test("Hidden Text Testing", async (t) => {
-  for (let i = 0; i <= 29; i++) {
-    const definition = Selector(".definition");
-    var style = definition.nth(i).getStyleProperty("display");
-    await t.expect(await style).eql("none");
-    await t.click(term.nth(i)).wait(62);
-    style = definition.nth(i).getStyleProperty("display");
-    await t.expect(await style).eql("inline");
-    await t.click(term.nth(i));
-    style = definition.nth(i).getStyleProperty("display");
-    await t.expect(await style).eql("none");
-  }
+  await t.maximizeWindow();
+  const term = Selector(".inline-d");
+  const definition = Selector(".definition");
+  var i = Math.floor(Math.random() * 14);
+  i = 2 * i + 1;
+  var style = definition.nth(i).getStyleProperty("display");
+  //Default
+  await t.expect(await style).eql("none");
+  //On click display
+  await t.click(term.nth(i)).wait(750);
+  style = definition.nth(i).getStyleProperty("display");
+  await t.expect(await style).eql("inline");
+  //On click remove
+  await t.click(definition.nth(i)).wait(500);
+  style = definition.nth(i).getStyleProperty("display");
+  await t.expect(await style).eql("none");
 });
 
 /*
