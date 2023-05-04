@@ -109,7 +109,7 @@ var emph = document.querySelector("em");
 var code = document.querySelectorAll("code");
 
 // when clicking the sun or moon icon in the top right this function will execute
-radio.onclick = function () {
+radio.addEventListener("click", () => {
   emph.classList.toggle("lightMode-emph");
   background.forEach((w) => w.classList.toggle("lightMode-bcw"));
   text.forEach((t) => t.classList.toggle("lightMode-txt"));
@@ -121,7 +121,7 @@ radio.onclick = function () {
   modalHeader.forEach((mH) => mH.classList.toggle("lightMode-modalHeader"));
   modalContent.forEach((mc) => mc.classList.toggle("lightMode-modalContent"));
   code.forEach((c) => c.classList.toggle("lightMode-code"));
-};
+});
 
 /*
 Light Mode Dark Mode End
