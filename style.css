@@ -315,6 +315,13 @@ Radio Button End
   /* cursor: pointer; */
 }
 
+@media screen and (max-width: 31em)
+{
+    h1 {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 31em) and (max-width: 59em) {
   .cards {
     flex: 1 0 40%;
