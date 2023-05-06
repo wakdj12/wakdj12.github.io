@@ -20,15 +20,15 @@ body {
 header {
   border-bottom: solid 0.05em #c1e1c1;
   border-radius: 0;
-  position: sticky; /* keeps the header at the top */
+  position: fixed; /* keeps the header at the top */
   padding-top: 0.5em;
   padding-bottom: 2.5em;
   top: 0;
+  left: 0;
   z-index: 10;
-  height: 6em;
   background-color: #121212;
   width: 100%;
-  height: 100%;
+  height: 10em;
 }
 
 h1 {
@@ -140,15 +140,15 @@ Radio button
 
 .switcharoo {
   display: inline-flex;
-  float: right;
 }
 
 .switch {
-  position: relative;
+  position: fixed;
   display: inline-block;
-  width: 3em;
-  height: 3em;
-  margin: 0.5em;
+  width: 1.5em;
+  height: 1.5em;
+  top: 8em;
+  right: 0.5em;
 }
 
 .switch input {
@@ -160,9 +160,6 @@ Radio button
 .sun {
   position: absolute;
   cursor: pointer;
-  top: 0;
-  right: 0;
-  bottom: 0;
 }
 
 .sun::before {
@@ -170,8 +167,6 @@ Radio button
   content: "";
   height: 1.5em;
   width: 1.5em;
-  left: 0.1em;
-  bottom: 0.25em;
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Sun_of_York.svg/1200px-Sun_of_York.svg.png");
   background-attachment: inherit;
   background-size: contain;
