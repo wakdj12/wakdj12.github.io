@@ -99,7 +99,9 @@ Light Mode Dark Mode
 */
 const radio = document.querySelector("input");
 const background = document.querySelectorAll("#wrapper, body, header");
-const text = document.querySelectorAll("p,.definition,.translation, .centre-t");
+const text = document.querySelectorAll(
+  "p,.definition,.translation, .centre-t, li"
+);
 const headMain = document.querySelectorAll("h1,h2,h3,h4");
 const anch = document.querySelectorAll("a");
 const modalTitle = document.querySelectorAll(".modal-header  > h3");
@@ -136,26 +138,35 @@ Light Mode Dark Mode End
 EASY,MEDIUM, DIFFICULT
 */
 const emdList = document.querySelectorAll(".emd-list > li");
-console.log(emdList);
 const input = document.querySelector(".slidey");
 const output = document.querySelector(".emd-content");
 const inputTitle = document.querySelector(".emd-title");
 const inputTitleDefault = inputTitle.textContent;
-const lowContent = [
-  "I know it has been covered before but creating strong passwords is extremely important in order to ensure privacy.",
-  "Using a browser that blocks trackers and does not collect information about you such as DuckDuckGo.",
-  "An obvious one, but don't leave devices unlocked when you aren't near them",
-  "Decline non-essential cookies when possible",
+const defaultLiContent = [
+  emdList[0].textContent,
+  emdList[1].textContent,
+  emdList[2].textContent,
+  emdList[3].textContent,
 ];
-const mediumContent = ["lorem", "ipsum", "hi", "bye"];
-const highContent = ["bye", "hi", "ipsum", "lorem"];
+const mediumContent = [
+  "Enable two factor authentication for any service which requires you to login as this reduces the risk of any of your accounts being broken into",
+  "Limit social media use. Doing this reduces the amount of Personal Identifiable Information (PII) collected as well as reducing information you freely give up such as photos of your house",
+  "Regularly request companies to delete data they have collected on you.",
+  "Don't use IoT devices such as Amazon's Alexa as not only do these typically have poor security measures but they also collect massive amounts of data on you.",
+];
+const highContent = [
+  "Only pay using cash, no online shopping allowed. Reduces the amount of PII collected as well as reducing the risk of banking information being leaked.",
+  "Don't use mainstream operating systems or any services offered by large technology companies, for example switch to a Linux based operarting system and use an email service such as Proton Mail instead of Gmail.",
+  "Start using Tor as this hides your IP address and browsing data. In addition to this only visit websites ending in .onion  ",
+  "When not using a computing device place it into a faraday cage. This usually isn't a cage, but a case which blocks electromagnetic waves. This prevents information such as your location being transmitted.",
+];
 input.addEventListener("input", (event) => {
   if (event.target.value == 1) {
     inputTitle.textContent = inputTitleDefault;
-    emdList[0].textContent = lowContent[0];
-    emdList[1].textContent = lowContent[1];
-    emdList[2].textContent = lowContent[2];
-    emdList[3].textContent = lowContent[3];
+    emdList[0].textContent = defaultLiContent[0];
+    emdList[1].textContent = defaultLiContent[1];
+    emdList[2].textContent = defaultLiContent[2];
+    emdList[3].textContent = defaultLiContent[3];
   } else if (event.target.value == 2) {
     inputTitle.textContent = "Inconvenience: Medium";
     emdList[0].textContent = mediumContent[0];
