@@ -320,6 +320,10 @@ Radio Button End
     h1 {
         display: none;
     }
+
+    header {
+        padding-bottom: 0.5em;
+    }
 }
 
 @media screen and (min-width: 31em) and (max-width: 59em) {
@@ -329,6 +333,10 @@ Radio Button End
     margin-right: 0.5em;
     height: 30em;
   }
+
+    header {
+        padding-bottom: 0.5em;
+    }
 }
 
 @media screen and (min-width: 60em) and (max-width: 99em) {
