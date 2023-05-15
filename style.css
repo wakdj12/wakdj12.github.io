@@ -222,16 +222,16 @@ Radio Button End
   width: 75%;
 
   /* use of -webkit ensures compatibility when using chrome and safari*/
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.25s;
-  animation-name: animatetop;
-  animation-duration: 0.25s;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 0.75s;
+  animation-name: animatebottom;
+  animation-duration: 0.75s;
 }
 
 /* Add Animation */
-@-webkit-keyframes animatetop {
+@-webkit-keyframes animatebottom {
   from {
-    top: -300px;
+    top: 300px;
     opacity: 0;
   }
   to {
@@ -240,9 +240,9 @@ Radio Button End
   }
 }
 
-@keyframes animatetop {
+@keyframes animatebottom {
   from {
-    top: -300px;
+    top: 300px;
     opacity: 0;
   }
   to {
@@ -430,11 +430,8 @@ a:hover.lightMode-anch {
   Dark Mode Styling End
   */
 
-.emd-list > li {
-  -webkit-animation-name: animat;
-  -webkit-animation-duration: 0.25s;
-  animation-name: animatetop;
-  animation-duration: 0.25s;
+.emd-content > li {
+  transition: all 0.5s ease;
 }
 
 footer {
