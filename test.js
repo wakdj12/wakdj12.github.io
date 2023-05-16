@@ -52,3 +52,29 @@ test("Hidden Text Testing", async (t) => {
 /*
 Hidden Text Testing END
 */
+
+/*
+light mode dark mode start
+*/
+
+const moonSunIcon = Selector(".switch");
+const wrapper = Selector("#wrapper");
+const title = Selector("h1");
+const textP = Selector("p");
+
+test.only("Hidden Text Testing", async (t) => {
+  await t.maximizeWindow();
+  await await t.debug();
+  //Main text test - Darkmode
+  let styleText = textP.getStyleProperty("color");
+  await t.expect(await styleText).eql("rgb(255, 255, 240)");
+  //Title test - Darkmode
+  let styleTitle = title.getStyleProperty("color");
+  await t.expect(await styleTitle).eql("rgb(250, 128, 114)");
+  await t.click(moonSunIcon);
+  // styleBackground = wrapper.getStyleProperty("background-colour");
+  // await t.expect(await style).eql("#121212");
+});
+/*
+light mode dark mode start
+*/
