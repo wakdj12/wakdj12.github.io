@@ -42,7 +42,7 @@ function json(url) {
   return fetch(url).then((res) => res.json());
 }
 
-const apiKey = "627c6d76f95b0ee0e7cef70893447a56f28f3859021e4cab28a183ac";
+const apiKey = "e2ecea5ae320d4f7b19582974a58c0fa638b88a48d690cfeb2ed1aa2";
 json(`https://api.ipdata.co?api-key=${apiKey}`).then((data) => {
   pInfo.textContent = `IP Adress: ${data.ip}, City: ${data.city}, Approximate Latitude: ${data.latitude}, Approximate Longitude: ${data.longitude}, Operating System: ${window.navigator.oscpu}`;
 });
