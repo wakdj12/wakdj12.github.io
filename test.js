@@ -27,7 +27,7 @@ Modal Testing END
 */
 
 /*
-Hidden Text Testing - Not 100% accurate
+Hidden Text Testing - Not 100% accurate. ~97%
 */
 const term = Selector(".inline-d");
 const definition = Selector(".definition");
@@ -48,7 +48,6 @@ test("Hidden Text Testing", async (t) => {
   style = definition.nth(i).getStyleProperty("display");
   await t.expect(await style).eql("none");
 });
-
 /*
 Hidden Text Testing END
 */
@@ -70,9 +69,11 @@ const cards = Selector(".cards");
 const randomLink = Math.floor(Math.random() * 51);
 const randomCode = Math.floor(Math.random() * 3);
 const randomCard = Math.floor(Math.random() * 3);
-const sidesArr = test.only("Night-mode day-mode", async (t) => {
+
+test("Night-mode day-mode", async (t) => {
   await t.maximizeWindow();
   //Darkmode testing
+  await t.debug();
   let styleText = textP.getStyleProperty("color");
   await t.expect(await styleText).eql("rgb(255, 255, 240)");
   //Title test
@@ -131,6 +132,7 @@ const sidesArr = test.only("Night-mode day-mode", async (t) => {
 
   //rgb(5, 55, 103
 });
+
 /*
 light mode dark mode start
 */
